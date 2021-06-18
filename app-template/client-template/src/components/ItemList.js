@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreateItem() {
+function ItemList() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function CreateItem() {
     )
 }
 
-export default CreateItem
+export default ItemList
