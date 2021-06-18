@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import ProductList from '../../components/ProductList';
 
 function ManageItems() {
     const [products, setProducts] = useState([]);
@@ -22,12 +23,6 @@ function ManageItems() {
         }
     }
 
-    const formatDate = (date) => {
-        let dateObj = new Date(date);
-
-        return `${dateObj.getFullYear()}-${dateObj.getMonth()}-${dateObj.getDate()} ${dateObj.getHours()}:${dateObj.getMinutes()}`;
-    }
-
     return (
         <div>
             <h2>Manage Products</h2>
@@ -47,21 +42,8 @@ function ManageItems() {
                         </tr>
                     </thead>
                     <tbody id="displayProducts">
-                        {
-                            products.map((product) => (
-                                <tr key={product['_id']} >
-                                    <td>{product.title}</td>
-                                    <td>{product.price}</td>
-                                    <td>{product.description}</td>
-                                    <td>{product.stock}</td>
-                                    <td>{formatDate(product.date)}</td>
-                                    <td>
-                                        <button>Update</button>
-                                        <button>Delete</button>
-                                    </td>
-                                </tr>
-                            ))
-                        }
+                        <ProductList products={products} />
+
                     </tbody>
                 </table>
             </div>
