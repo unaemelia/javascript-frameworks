@@ -20,7 +20,7 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Items} />
-          <Route path="/Item" component={Item} />
+          <Route path="/item/:id" component={Item} />
           <Route path="/manage-items" component={ManageItems} />
           <Route path="/create-item" component={CreateItem} />
           <Route path="/update-item/:id" component={UpdateItem} />
