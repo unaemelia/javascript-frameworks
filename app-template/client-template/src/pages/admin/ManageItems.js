@@ -23,6 +23,18 @@ function ManageItems() {
         }
     }
 
+    // Needs a fix: issues with the productId
+    const deleteProduct = async (productId) => {
+        try {
+            await fetch('http://localhost:5000/products/' + productId, {
+                method: 'DELETE',
+            });
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
         <div>
             <h2>Manage Products</h2>
@@ -30,21 +42,8 @@ function ManageItems() {
             <button>Create Items</button>
 
             <div id="tableContainer">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Price</th>
-                            <th>Description</th>
-                            <th>Stock</th>
-                            <th>Date</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="displayProducts">
-                        <ProductList products={products} />
-
-                    </tbody>
+                <table id="displayProducts">
+                    <ProductList products={products} deleteProduct={deleteProduct} />
                 </table>
             </div>
         </div >
