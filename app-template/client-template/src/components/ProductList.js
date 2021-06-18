@@ -4,9 +4,8 @@ import Product from './Product';
 function ProductList({ products, deleteProduct }) {
 
     return (
-        <div>
-            {/* Needs fixing: <thead> is not in sync with <tbody> */}
-            <thead>
+        <table>
+            < thead >
                 <tr>
                     <th>Title</th>
                     <th>Price</th>
@@ -15,13 +14,13 @@ function ProductList({ products, deleteProduct }) {
                     <th>Date</th>
                     <th>Action</th>
                 </tr>
-            </thead>
+            </thead >
             {
                 products.map((product) => (
                     <Product key={product['_id']} product={product} deleteProduct={deleteProduct} />
                 ))
             }
-        </div>
+        </table>
     )
 }
 

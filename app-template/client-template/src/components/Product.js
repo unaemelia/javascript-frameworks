@@ -8,26 +8,24 @@ function Product({ product, deleteProduct }) {
     }
 
     const handleDeleteProduct = () => {
-        deleteProduct();
+        deleteProduct(product['_id']);
     }
 
 
     return (
-        <div>
-            <tbody>
-                <tr>
-                    <td>{product.title}</td>
-                    <td>{product.price}</td>
-                    <td>{product.description}</td>
-                    <td>{product.stock}</td>
-                    <td>{formatDate(product.date)}</td>
-                    <td>
-                        <button>Update</button>
-                        <button onClick={handleDeleteProduct}>Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </div>
+        <tbody>
+            <tr>
+                <td>{product.title}</td>
+                <td>{product.price}</td>
+                <td>{product.description}</td>
+                <td>{product.stock}</td>
+                <td>{formatDate(product.date)}</td>
+                <td>
+                    <button>Update</button>
+                    <button onClick={handleDeleteProduct}>Delete</button>
+                </td>
+            </tr>
+        </tbody>
     )
 }
 
