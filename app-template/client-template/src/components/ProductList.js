@@ -11,6 +11,7 @@ function ProductList({ products, deleteProduct }) {
                     <th>Price</th>
                     <th>Description</th>
                     <th>Stock</th>
+                    <th>Category</th>
                     <th>Date</th>
                     <th>Action</th>
                 </tr>

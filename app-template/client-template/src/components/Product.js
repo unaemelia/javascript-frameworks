@@ -19,6 +19,7 @@ function Product({ product, deleteProduct }) {
                 <td>{product.price}</td>
                 <td>{product.description}</td>
                 <td>{product.stock}</td>
+                <td>{product.category}</td>
                 <td>{formatDate(product.date)}</td>
                 <td>
                     <button>Update</button>
