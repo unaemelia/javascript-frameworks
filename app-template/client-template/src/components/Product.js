@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Product({ product, deleteProduct }) {
     const formatDate = (date) => {
@@ -22,7 +23,9 @@ function Product({ product, deleteProduct }) {
                 <td>{product.category}</td>
                 <td>{formatDate(product.date)}</td>
                 <td>
-                    <button>Update</button>
+                    {/* A button cannot be inside of a link, this page hase a solution: */}
+                    {/* https://stackoverflow.com/questions/42463263/wrapping-a-react-router-link-in-an-html-button#answer-49439893 */}
+                    <Link to={`/update-item/${product['_id']}`}><button>Update</button></Link>
                     <button onClick={handleDeleteProduct}>Delete</button>
                 </td>
             </tr>
