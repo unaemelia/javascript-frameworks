@@ -16,7 +16,8 @@ router.get('/', async (req, res) => {
 
 //GET specific product
 router.get('/:productId', async (req, res) => {
-    res.send('Specific product ' + req.params.productId)
+    //taken out to make update page work
+    // res.send('Specific product ' + req.params.productId)
     try {
         const product = await Product.findById(req.params.productId);
         res.json(product);

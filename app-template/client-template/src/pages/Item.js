@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Needs fix: Error: Server error 404
 // Displays NaN instead of the product
+// Use get method?
 
 function Item({ match }) {
     const [product, setProduct] = useState({});
@@ -12,6 +13,8 @@ function Item({ match }) {
     }, []);
 
     const fetchProduct = async () => {
+
+
         try {
             const response = await fetch('http://localhost:5000/products' + match.params.id);
             if (!response.ok) {
