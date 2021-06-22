@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
+import { Title } from '../../styles/Styling';
 
 
 const CreateItem = () => {
@@ -31,7 +32,7 @@ const CreateItem = () => {
 
     return (
         <div>
-            <h1>Create Product</h1>
+            <Title>Create Product</Title>
             <Link to="/create-category">
                 <button>Create Category</button>
             </Link>

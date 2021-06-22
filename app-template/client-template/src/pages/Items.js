@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProductsPage from '../components/ProductsPage';
+import { Title } from '../styles/Styling';
 
 function Items() {
     const [products, setProducts] = useState([]);
@@ -26,7 +27,7 @@ function Items() {
 
     return (
         <div>
-            <h1>Products</h1>
+            <Title>Products</Title>
             <div className="product-list">
                 {
                     products.map((product) => (

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Title } from '../../styles/Styling';
 
 const CreateCategory = () => {
     const history = useHistory();
@@ -24,7 +25,7 @@ const CreateCategory = () => {
     };
     return (
         <div>
-            <h2>Create New Category</h2>
+            <Title>Create New Category</Title>
             <input
                 type="text"
                 value={title}

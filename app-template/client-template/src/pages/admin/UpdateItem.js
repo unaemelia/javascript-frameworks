@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
+import { Title } from '../../styles/Styling';
 
 function UpdateItem({ match }) {
     const productId = match.params.productId;
@@ -53,6 +54,7 @@ function UpdateItem({ match }) {
 
     return (
         <div>
+            <Title>Update Product</Title>
             <ProductForm
                 title={title}
                 setTitle={setTitle}
