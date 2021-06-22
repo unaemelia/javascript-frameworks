@@ -40,12 +40,3 @@ function Items() {
 }
 
 export default Items
-
-// <article key={product['_id']}>
-                        //     <h3>{product.title}</h3>
-                        //     <p>{product.description}</p>
-                        //     <p>{product.stock}</p>
-                        //     <p>{product.category}</p>
-                        //     <i>{formatDate(product.date)}</i>
-                        //     <Link to={`/item/${product['_id']}`}> Read More</Link>
-                        // </article>
