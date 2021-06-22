@@ -17,10 +17,10 @@ function Product({ product, deleteProduct }) {
         <tbody>
             <tr>
                 <td>{product.title}</td>
-                <td>{product.price}</td>
-                <td>{product.description}</td>
-                <td>{product.stock}</td>
                 <td>{product.category}</td>
+                <td>{product.description}</td>
+                <td>{product.price}</td>
+                <td>{product.stock}</td>
                 <td>{formatDate(product.date)}</td>
                 <td>
                     {/* A button cannot be inside of a link, this page hase a solution: */}

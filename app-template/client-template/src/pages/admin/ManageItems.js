@@ -9,6 +9,7 @@ function ManageItems() {
         fetchProducts();
     }, []);
 
+    // get all products
     const fetchProducts = async () => {
         try {
             const response = await fetch('http://localhost:5000/products');
@@ -16,7 +17,6 @@ function ManageItems() {
                 throw new Error('Server error ' + response.status);
             }
             const data = await response.json();
-            console.log(data);
 
             setProducts(data);
         } catch (error) {
@@ -24,9 +24,10 @@ function ManageItems() {
         }
     }
 
+    //delete product
     const deleteProduct = async (productId) => {
         try {
-            await fetch('http://localhost:5000/products/' + productId, {
+            await fetch(`http://localhost:5000/products/${productId}`, {
                 method: 'DELETE',
             });
 

@@ -10,6 +10,7 @@ import Items from './pages/Items';
 import Item from './pages/Item';
 import ManageItems from './pages/admin/ManageItems';
 import CreateItem from './pages/admin/CreateItem';
+import CreateCategory from "./pages/admin/CreateCategory";
 import UpdateItem from './pages/admin/UpdateItem';
 
 
@@ -20,10 +21,11 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Items} />
-          <Route path="/item/:id" component={Item} />
+          <Route path="/item/:productId" component={Item} />
           <Route path="/manage-items" component={ManageItems} />
           <Route path="/create-item" component={CreateItem} />
-          <Route path="/update-item/:id" component={UpdateItem} />
+          <Route path="/update-item/:productId" component={UpdateItem} />
+          <Route path="/create-category" component={CreateCategory} />
         </Switch>
       </Router>
     </div>

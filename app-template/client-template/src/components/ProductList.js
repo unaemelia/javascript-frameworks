@@ -8,17 +8,21 @@ function ProductList({ products, deleteProduct }) {
             < thead >
                 <tr>
                     <th>Title</th>
-                    <th>Price</th>
-                    <th>Description</th>
-                    <th>Stock</th>
                     <th>Category</th>
+                    <th className="product-description">Description</th>
+                    <th>Price</th>
+                    <th>Stock</th>
                     <th>Date</th>
                     <th>Action</th>
                 </tr>
             </thead >
             {
                 products.map((product) => (
-                    <Product key={product['_id']} product={product} deleteProduct={deleteProduct} />
+                    <Product
+                        key={product['_id']}
+                        product={product}
+                        deleteProduct={deleteProduct}
+                    />
                 ))
             }
         </table>
