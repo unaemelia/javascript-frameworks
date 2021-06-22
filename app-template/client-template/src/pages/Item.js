@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 // Needs fix: Error: Server error 404
 // Displays NaN instead of the product
-// Use get method?
 
 function Item({ match }) {
     const [product, setProduct] = useState({});
