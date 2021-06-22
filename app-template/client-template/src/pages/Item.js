@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import proimage from "../images/pro-image.jpg";
 import { Button } from '.././styles/Styling';
+import { motion } from 'framer-motion';
+import { imgVariant } from '../styles/Animate';
 
 function Item({ match }) {
     const [product, setProduct] = useState({});
     const [productQuantity, setProductQuantity] = useState(1);
     const productId = match.params.productId;
-    // console.log(match.params);
 
     useEffect(() => {
         fetchProduct();
@@ -22,13 +23,18 @@ function Item({ match }) {
 
     return (
         <div className="product-box">
-            <div className="img-box">
+            <motion.div
+                className="img-box"
+                variants={imgVariant}
+                initial={'start'}
+                animate={'stop'}
+            >
                 <img
                     className="product-img"
                     src={product.img ? product.img : proimage}
                     alt={product.title}
                 />
-            </div>
+            </motion.div>
             <div className="product-details">
                 <h1>{product.title}</h1>
                 <p>Price: {product.price} Kr</p>

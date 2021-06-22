@@ -10,13 +10,13 @@ function Nav() {
                 <Link to="/">
                     <motion.li
                         whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.7 }}
+                        whileTap={{ scale: 0.9 }}
                     >Products
                     </motion.li></Link>
                 <Link to="/manage-items">
                     <motion.li
                         whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.7 }}
+                        whileTap={{ scale: 0.9 }}
                     >Admin</motion.li>
                 </Link>
             </ul>
