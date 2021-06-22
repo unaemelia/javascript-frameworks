@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import proimage from "../images/pro-image.jpg";
-
+import { Button } from '.././styles/Styling';
 
 function Item({ match }) {
     const [product, setProduct] = useState({});
@@ -44,7 +44,7 @@ function Item({ match }) {
                 <p>Avaliable Stock: {product.stock}</p>
 
                 <p>Product detail: {product.description}</p>
-                <Link to="/">Back</Link>
+                <Link to="/"><Button>Back</Button></Link>
             </div>
         </div>
 

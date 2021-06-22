@@ -1,6 +1,7 @@
 import React from "react";
 import proimage from "../images/pro-image.jpg";
 import { Link } from "react-router-dom";
+import { Button } from '.././styles/Styling';
 
 const ProductsPage = ({ product }) => {
     return (
@@ -12,7 +13,7 @@ const ProductsPage = ({ product }) => {
                 alt={product.title}
             />
             <p>Price: {product.price} SEK</p>
-            <Link to={`/item/${product['_id']}`}>View Product</Link>
+            <Link to={`/item/${product['_id']}`}><Button>View Product</Button></Link>
         </div>
     );
 };
