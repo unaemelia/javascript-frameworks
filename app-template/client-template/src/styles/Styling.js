@@ -18,7 +18,7 @@ export const Title = styled.h1`
 export const StyledNav = styled.nav`
 
     ul {
-        background: #dfd9e9;
+        background: #1abc9c;
         display: flex;
         justify-content: space-around;
         list-style: none;
