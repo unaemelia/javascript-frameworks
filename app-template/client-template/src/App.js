@@ -1,23 +1,18 @@
-import './App.css';
+import "./App.css";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
-import Nav from './components/Nav';
-import Items from './pages/Items';
-import Item from './pages/Item';
-import ManageItems from './pages/admin/ManageItems';
-import CreateItem from './pages/admin/CreateItem';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import Items from "./pages/Items";
+import Item from "./pages/Item";
+import ManageItems from "./pages/admin/ManageItems";
+import CreateItem from "./pages/admin/CreateItem";
 import CreateCategory from "./pages/admin/CreateCategory";
-import UpdateItem from './pages/admin/UpdateItem';
-
+import UpdateItem from "./pages/admin/UpdateItem";
 
 function App() {
   return (
     <div className="App">
-      <div>test 2</div>
+      <div>changes 1</div>
       <Router>
         <Nav />
         <Switch>
