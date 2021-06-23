@@ -17,7 +17,7 @@ import UpdateItem from './pages/admin/UpdateItem';
 function App() {
   return (
     <div className="App">
-      <div>test</div>
+      <div>test 2</div>
       <Router>
         <Nav />
         <Switch>
