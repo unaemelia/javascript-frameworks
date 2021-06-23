@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
-import { Title } from '../../styles/Styling';
+import { Title, PageWrapper } from '../../styles/Styling';
 
 function UpdateItem({ match }) {
     const productId = match.params.productId;
@@ -53,7 +53,7 @@ function UpdateItem({ match }) {
     };
 
     return (
-        <div>
+        <PageWrapper>
             <Title>Update Product</Title>
             <ProductForm
                 title={title}
@@ -71,7 +71,7 @@ function UpdateItem({ match }) {
                 setImg={setImg}
                 formId="update-item"
             />
-        </div >
+        </PageWrapper>
     );
 }
 

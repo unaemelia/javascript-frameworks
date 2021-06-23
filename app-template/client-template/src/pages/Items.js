@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProductsPage from '../components/ProductsPage';
-import { Title } from '../styles/Styling';
+import { Title, PageWrapper } from '../styles/Styling';
 
 function Items() {
     const [products, setProducts] = useState([]);
@@ -26,7 +26,7 @@ function Items() {
     }
 
     return (
-        <div>
+        <PageWrapper>
             <Title>Products</Title>
             <div className="product-list">
                 {
@@ -35,7 +35,7 @@ function Items() {
                     ))
                 }
             </div>
-        </div>
+        </PageWrapper>
 
     )
 }

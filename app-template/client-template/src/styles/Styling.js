@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const PageWrapper = styled.div`
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em 7em;
+    backgroundColor: lightgray;
+    color: #3f3a46;
+    text-align: center;
+`;
+
 export const Title = styled.h1`
     font-size: 1.5em;
     text-align: center;

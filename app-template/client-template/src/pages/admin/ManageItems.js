@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ProductList from '../../components/ProductList';
 import { Link } from 'react-router-dom';
-import { Title } from '../../styles/Styling';
+import { Title, PageWrapper } from '../../styles/Styling';
 
 function ManageItems() {
     const [products, setProducts] = useState([]);
@@ -39,7 +39,7 @@ function ManageItems() {
     }
 
     return (
-        <div>
+        <PageWrapper>
             <Title>Manage Products</Title>
             {/* A button cannot be inside of a link, this page hase a solution: */}
             {/* https://stackoverflow.com/questions/42463263/wrapping-a-react-router-link-in-an-html-button#answer-49439893 */}
@@ -48,7 +48,7 @@ function ManageItems() {
             <section id="displayProducts">
                 <ProductList products={products} deleteProduct={deleteProduct} />
             </section>
-        </div >
+        </PageWrapper>
     )
 }
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import proimage from "../images/pro-image.jpg";
-import { Button } from '.././styles/Styling';
+import { Button, PageWrapper } from '.././styles/Styling';
 import { motion } from 'framer-motion';
 import { imgVariant } from '../styles/Animate';
 
@@ -22,7 +22,7 @@ function Item({ match }) {
     };
 
     return (
-        <div className="product-box">
+        <PageWrapper className="product-box">
             <motion.div
                 className="img-box"
                 variants={imgVariant}
@@ -52,7 +52,7 @@ function Item({ match }) {
                 <p>Product detail: {product.description}</p>
                 <Link to="/"><Button>Back</Button></Link>
             </div>
-        </div>
+        </PageWrapper>
 
     )
 }

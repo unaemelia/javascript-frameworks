@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
-import { Title } from '../../styles/Styling';
+import { Title, PageWrapper } from '../../styles/Styling';
 
 
 const CreateItem = () => {
@@ -31,7 +31,7 @@ const CreateItem = () => {
     };
 
     return (
-        <div>
+        <PageWrapper>
             <Title>Create Product</Title>
             <Link to="/create-category">
                 <button>Create Category</button>
@@ -53,7 +53,7 @@ const CreateItem = () => {
                 formId="create-item"
             />
             {/* <Link to="/manage-items">Back</Link> */}
-        </div>
+        </PageWrapper>
     );
 }
 
