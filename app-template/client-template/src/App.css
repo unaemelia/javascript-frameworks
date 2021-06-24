@@ -18,6 +18,7 @@
 }
 .img-thumbnail {
   width: 200px;
+  height: 230px;
 }
 .product-img {
   width: 300px;
@@ -72,4 +73,18 @@
   padding: 15px;
   width: 200px;
   margin-left: auto;
+}
+.category_label {
+  display: inline;
+  background-color: #7ee0cd;
+  border-radius: 15px;
+  padding: 3px 7px;
+  border: 1px solid grey;
+}
+.out_of_stock {
+  color: red;
+}
+.price_label {
+  font-size: 18px;
+  font-weight: bold;
 }
