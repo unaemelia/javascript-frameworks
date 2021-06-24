@@ -22,7 +22,7 @@ function Item({ match }) {
   };
 
   return (
-    <PageWrapper className="product-box">
+    <div className="product-box">
       <motion.div
         className="img-box"
         variants={imgVariant}
@@ -56,7 +56,7 @@ function Item({ match }) {
           <Button>Back</Button>
         </Link>
       </div>
-    </PageWrapper>
+    </div>
   );
 }
 

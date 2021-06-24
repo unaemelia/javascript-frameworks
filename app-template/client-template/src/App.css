@@ -22,12 +22,13 @@
 }
 .product-img {
   width: 300px;
-  height: 350capx;
+  height: 350px;
 }
 .product-box {
   display: flex;
   width: 80%;
-  justify-content: space-around;
+  margin: auto;
+  justify-content: center;
 }
 .quantity-box {
   width: 35px;
