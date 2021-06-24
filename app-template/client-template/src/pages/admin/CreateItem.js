@@ -15,7 +15,6 @@ const CreateItem = () => {
     const history = useHistory();
 
     const handleSubmit = async (formData) => {
-        //console.log(JSON.stringify(formData));
         try {
             await fetch("http://localhost:5000/products", {
                 method: "POST",
@@ -33,9 +32,6 @@ const CreateItem = () => {
     return (
         <PageWrapper>
             <Title>Create Product</Title>
-            {/* <Link to="/create-category">
-                <button>Create Category</button>
-            </Link> */}
             <ProductForm
                 title={title}
                 setTitle={setTitle}
@@ -52,7 +48,6 @@ const CreateItem = () => {
                 setImg={setImg}
                 formId="create-item"
             />
-            {/* <Link to="/manage-items">Back</Link> */}
         </PageWrapper>
     );
 }

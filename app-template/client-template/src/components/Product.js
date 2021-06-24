@@ -23,8 +23,6 @@ function Product({ product, deleteProduct }) {
                 <td>{product.stock}</td>
                 <td>{formatDate(product.date)}</td>
                 <td>
-                    {/* A button cannot be inside of a link, this page hase a solution: */}
-                    {/* https://stackoverflow.com/questions/42463263/wrapping-a-react-router-link-in-an-html-button#answer-49439893 */}
                     <Link to={`/update-item/${product['_id']}`}><button>Update</button></Link>
                     <button onClick={handleDeleteProduct}>Delete</button>
                 </td>
