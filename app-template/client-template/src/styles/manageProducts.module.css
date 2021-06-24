@@ -19,7 +19,8 @@ td {
   min-width: 80px;
 }
 tr:hover {
-  background-color: rgb(162, 255, 243);
+  /* background-color: rgb(162, 255, 243); */
+  background-color: #ebf6fa;
 }
 .create_btn {
   background-color: rgb(21, 0, 95);

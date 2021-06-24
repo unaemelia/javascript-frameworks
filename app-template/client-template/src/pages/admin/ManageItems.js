@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ProductList from '../../components/ProductList';
 import { Link } from 'react-router-dom';
-import { Title, PageWrapper } from '../../styles/Styling';
+import { Title, PageWrapper, Button } from '../../styles/Styling';
 
 function ManageItems() {
     const [products, setProducts] = useState([]);
@@ -41,7 +41,7 @@ function ManageItems() {
     return (
         <PageWrapper>
             <Title>Manage Products</Title>
-            <Link to="/create-item"><button>Create Items</button></Link>
+            <Link to="/create-item"><Button>Create Items</Button></Link>
 
             <section id="displayProducts">
                 <ProductList products={products} deleteProduct={deleteProduct} />
