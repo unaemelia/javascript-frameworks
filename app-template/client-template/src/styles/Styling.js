@@ -38,6 +38,7 @@ export const StyledNav = styled.nav`
         display: flex;
         justify-content: space-around;
         list-style: none;
+        height: 12vh;
         a {
             text-decoration: none;
             padding: 1em;
