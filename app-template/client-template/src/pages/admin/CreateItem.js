@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
 import { Title, PageWrapper } from '../../styles/Styling';
 
@@ -33,9 +33,9 @@ const CreateItem = () => {
     return (
         <PageWrapper>
             <Title>Create Product</Title>
-            <Link to="/create-category">
+            {/* <Link to="/create-category">
                 <button>Create Category</button>
-            </Link>
+            </Link> */}
             <ProductForm
                 title={title}
                 setTitle={setTitle}
