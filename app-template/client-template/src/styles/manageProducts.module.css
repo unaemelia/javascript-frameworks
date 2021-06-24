@@ -1,0 +1,32 @@
+/* Manage Products */
+
+thead th {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table_row {
+  border: solid thin;
+}
+tr:nth-child(odd) {
+  background-color: rgb(201, 198, 198);
+}
+th,
+td {
+  min-width: 80px;
+}
+tr:hover {
+  background-color: rgb(162, 255, 243);
+}
+.create_btn {
+  background-color: rgb(21, 0, 95);
+}
+table {
+  margin: 30px 0;
+}
+.product_description {
+  width: 400px;
+}

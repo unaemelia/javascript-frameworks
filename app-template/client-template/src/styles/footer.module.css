@@ -1,0 +1,35 @@
+/* Footer */
+.footer {
+  background-color: chocolate;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+
+  padding: 15px 10px 5px 10px;
+}
+.link_list,
+.services,
+.contact_info,
+.social_icons {
+  list-style: none;
+}
+.link_item {
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.icon_img {
+  width: 50px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.link:hover {
+  color: cornsilk;
+}

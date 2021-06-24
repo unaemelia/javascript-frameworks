@@ -8,11 +8,11 @@ import ManageItems from "./pages/admin/ManageItems";
 import CreateItem from "./pages/admin/CreateItem";
 import CreateCategory from "./pages/admin/CreateCategory";
 import UpdateItem from "./pages/admin/UpdateItem";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <div>testing again and again</div>
       <Router>
         <Nav />
         <Switch>
@@ -22,6 +22,7 @@ function App() {
           <Route path="/create-item" component={CreateItem} />
           <Route path="/update-item/:productId" component={UpdateItem} />
           <Route path="/create-category" component={CreateCategory} />
+          <Route path="/footer" component={Footer} />
         </Switch>
       </Router>
     </div>
