@@ -49,6 +49,7 @@ const ProductForm = ({
           <input
             className={styles.input}
             placeholder="Product Title * "
+            required="true"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
@@ -59,6 +60,7 @@ const ProductForm = ({
             rows="10"
             className={styles.textarea}
             placeholder="Product Description *"
+            required="true"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
@@ -68,6 +70,7 @@ const ProductForm = ({
           <input
             className={styles.input}
             placeholder="Product Price *"
+            required="true"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           />
@@ -76,6 +79,7 @@ const ProductForm = ({
           <input
             className={styles.input}
             placeholder="Product Stock * "
+            required="true"
             value={stock}
             onChange={(e) => setStock(e.target.value)}
           />
@@ -94,6 +98,7 @@ const ProductForm = ({
           <select
             className={styles.selectCategory}
             value={category}
+            required="true"
             onChange={(e) => setCategory(e.target.value)}
           >
             <option value="">Select Category</option>
