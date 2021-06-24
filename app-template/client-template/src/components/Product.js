@@ -18,7 +18,11 @@ function Product({ product, deleteProduct }) {
       <tr className={style.table_row}>
         <td>{product.title}</td>
         <td>{product.category}</td>
-        <td>{product.description}</td>
+        <td>
+          {product.description.length > 150
+            ? `${product.description.slice(0, 150)} .......`
+            : product.description}
+        </td>
         <td>{product.price}</td>
         <td>{product.stock}</td>
         <td>{formatDate(product.date)}</td>
