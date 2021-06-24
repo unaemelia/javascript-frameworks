@@ -3,8 +3,8 @@ import styled from 'styled-components';
 // General styles re-used in all pages
 export const PageWrapper = styled.div`
     display: flex;
-    flex-flow: column wrap;
-    padding: 1em 7em;
+    flex-flow: row wrap;
+    justify-content: center;
     background: #fffbf9;
     color: #3f3a46;
     text-align: center;

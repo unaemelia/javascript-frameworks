@@ -3,13 +3,6 @@
   text-align: center;
   background: #fffbf9;
 }
-/* Navbar */
-.header-nav {
-  display: flex;
-  justify-content: end;
-  background: #1abc9c;
-  height: 15vh;
-}
 /* Items + Item page */
 .product-description {
   width: 500px;
