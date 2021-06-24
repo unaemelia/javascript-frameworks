@@ -11,8 +11,7 @@ function Product({ product, deleteProduct }) {
   const handleDeleteProduct = () => {
     deleteProduct(product["_id"]);
   };
-
-  // just to see if i can push repository.
+  //testing for git
 
   return (
     <tbody>
