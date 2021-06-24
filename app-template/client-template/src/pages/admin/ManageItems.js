@@ -39,14 +39,14 @@ function ManageItems() {
     }
 
     return (
-        <PageWrapper>
+        <div>
             <Title>Manage Products</Title>
             <Link to="/create-item"><Button>Create Items</Button></Link>
 
             <section id="displayProducts">
                 <ProductList products={products} deleteProduct={deleteProduct} />
             </section>
-        </PageWrapper>
+        </div>
     )
 }
 
