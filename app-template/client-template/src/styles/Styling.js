@@ -11,7 +11,7 @@ export const PageWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
     color: #3f3a46;
 `;
@@ -38,6 +38,7 @@ export const StyledNav = styled.nav`
         display: flex;
         justify-content: space-around;
         list-style: none;
+        height: 12vh;
         a {
             text-decoration: none;
             padding: 1em;
