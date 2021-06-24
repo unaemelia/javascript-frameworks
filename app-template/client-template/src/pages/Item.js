@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import proimage from "../images/pro-image.jpg";
-import { Button, PageWrapper } from ".././styles/Styling";
+import { Button } from ".././styles/Styling";
 import { motion } from "framer-motion";
 import { imgVariant } from "../styles/Animate";
 
