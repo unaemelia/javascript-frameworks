@@ -2,10 +2,15 @@
   text-align: center;
   background: #fffbf9;
 }
+.header-nav {
+  display: flex;
+  justify-content: end;
+  background: #1abc9c;
+  height: 15vh
+}
 .product-description {
   width: 500px;
 }
-
 .product-list {
   display: flex;
   flex-wrap: wrap;

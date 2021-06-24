@@ -5,22 +5,24 @@ import { motion } from 'framer-motion';
 
 function Nav() {
     return (
-        <StyledNav>
-            <ul>
-                <Link to="/">
-                    <motion.li
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
-                    >Products
-                    </motion.li></Link>
-                <Link to="/manage-items">
-                    <motion.li
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
-                    >Admin</motion.li>
-                </Link>
-            </ul>
-        </StyledNav>
+        <header className="header-nav">
+            <StyledNav>
+                <ul>
+                    <Link to="/">
+                        <motion.li
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 1 }}
+                        >Products
+                        </motion.li></Link>
+                    <Link to="/manage-items">
+                        <motion.li
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 1 }}
+                        >Admin</motion.li>
+                    </Link>
+                </ul>
+            </StyledNav>
+        </header>
     )
 }
 
