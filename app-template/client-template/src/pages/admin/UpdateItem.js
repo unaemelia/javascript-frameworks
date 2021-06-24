@@ -53,7 +53,7 @@ function UpdateItem({ match }) {
     };
 
     return (
-        <PageWrapper>
+        <div>
             <Title>Update Product</Title>
             <ProductForm
                 title={title}
@@ -71,7 +71,7 @@ function UpdateItem({ match }) {
                 setImg={setImg}
                 formId="update-item"
             />
-        </PageWrapper>
+        </div>
     );
 }
 

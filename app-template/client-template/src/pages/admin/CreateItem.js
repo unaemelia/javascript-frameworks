@@ -30,7 +30,7 @@ const CreateItem = () => {
     };
 
     return (
-        <PageWrapper>
+        <div>
             <Title>Create Product</Title>
             <ProductForm
                 title={title}
@@ -48,7 +48,7 @@ const CreateItem = () => {
                 setImg={setImg}
                 formId="create-item"
             />
-        </PageWrapper>
+        </div>
     );
 }
 
