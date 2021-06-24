@@ -64,7 +64,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p>© Chnagemakers Education 2021 - All Rights Reserved</p>
+      <p>© Changemakers Education 2021 - All Rights Reserved</p>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// General styles re-used in all pages
 export const PageWrapper = styled.div`
     display: flex;
     flex-flow: column wrap;
@@ -15,6 +16,22 @@ export const Title = styled.h1`
     color: #3f3a46;
 `;
 
+export const Button = styled.button`
+    color: #3f3a46;
+    background: #ebf6fa;
+    border: 2px solid #3f3a46;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.2em 0.8em;
+    border-radius: 5px;
+    &:hover {
+        background-color: #3f3a46;
+        color: white;
+        cursor: pointer;
+    }
+`;
+
+// Navbar styles
 export const StyledNav = styled.nav`
     ul {
         background: #1abc9c;
@@ -27,19 +44,5 @@ export const StyledNav = styled.nav`
             font-size: 1.3em;
             color: #3f3a46;
         }
-    }
-`;
-
-export const Button = styled.button`
-    color: #3f3a46;
-    background: #defcf6;
-    border: 2px solid #3f3a46;
-    font-size: 1em;
-    margin: 1em;
-    padding: 0.2em 0.8em;
-    border-radius: 5px;
-    &:hover {
-        background-color: #95aba6;
-        cursor: pointer;
     }
 `;

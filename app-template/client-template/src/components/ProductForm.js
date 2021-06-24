@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from '../styles/Style.module.css'
-// import styles form '../pages/Style.module.css';
+import styles from '../styles/Forms.module.css'
 
 const ProductForm = ({
     title,
@@ -123,76 +122,3 @@ const ProductForm = ({
 };
 
 export default ProductForm;
-        // <div>
-        //     <form onSubmit={formDataHandler}>
-        //         <div className="form-row">
-        //             <label htmlFor="title">Title</label>
-        //             <input
-        //                 type="text"
-        //                 value={title}
-        //                 onChange={(e) => setTitle(e.target.value)}
-        //             />
-        //         </div>
-        //         <div className="form-row">
-        //             <label htmlFor="description">Description</label>
-        //             <textarea
-        //                 value={description}
-        //                 onChange={(e) => setDescription(e.target.value)}
-        //                 cols="30"
-        //                 rows="10"
-        //             ></textarea>
-        //         </div>
-        //         <div className="form-row">
-        //             <label htmlFor="price">Price</label>
-        //             <input
-        //                 type="number"
-        //                 value={price}
-        //                 onChange={(e) => setPrice(e.target.value)}
-        //             />
-        //         </div>
-        //         <div className="form-row">
-        //             <label htmlFor="stock">Stock</label>
-        //             <input
-        //                 type="number"
-        //                 value={stock}
-        //                 onChange={(e) => setStock(e.target.value)}
-        //             />
-        //         </div>
-
-        //         <div className="form-row">
-        //             <label htmlFor="img">Image URL</label>
-        //             <input
-        //                 type="text"
-        //                 value={img}
-        //                 onChange={(e) => setImg(e.target.value)}
-        //             />
-        //         </div>
-
-        //         <div className="form-row">
-        //             <select
-        //                 value={category}
-        //                 onChange={(e) => setCategory(e.target.value)}
-        //             >
-        //                 <option value="">Select Category</option>
-        //                 {categories.map((category) => (
-        //                     <option
-        //                         key={category._id}
-        //                         value={category.title}>
-        //                         {category.title}
-        //                     </option>
-        //                 ))}
-        //             </select>
-        //         </div>
-
-        //         <button type="submit">
-        //             {formId === "create-item" ? "Create" : "Update"}
-        //         </button>
-        //         <Link to="/manage-items">
-        //             <button>Back</button>
-        //         </Link>
-        //     </form>
-        // </div>
-//     );
-// };
-
-//                             export default ProductForm;

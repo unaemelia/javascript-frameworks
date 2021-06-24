@@ -22,8 +22,8 @@ function App() {
           <Route path="/create-item" component={CreateItem} />
           <Route path="/update-item/:productId" component={UpdateItem} />
           <Route path="/create-category" component={CreateCategory} />
-          <Route path="/footer" component={Footer} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

@@ -1,13 +1,16 @@
 .App {
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   background: #fffbf9;
 }
+/* Navbar */
 .header-nav {
   display: flex;
   justify-content: end;
   background: #1abc9c;
   height: 15vh
 }
+/* Items + Item page */
 .product-description {
   width: 500px;
 }
@@ -42,4 +45,8 @@
   font-size: 20px;
   margin: 5px;
   padding: 10px 20px;
+}
+/* Create Category Page */
+.create-category-input{
+  font-size: 22px;
 }

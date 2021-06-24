@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Title } from '../../styles/Styling';
+import { Title, Button } from '../../styles/Styling';
 
 const CreateCategory = () => {
     const history = useHistory();
@@ -27,17 +27,18 @@ const CreateCategory = () => {
         <div>
             <Title>Create New Category</Title>
             <input
+                className="create-category-input"
                 type="text"
                 value={title}
                 onChange={(e) => {
                     setTitle(e.target.value);
                 }}
             />
-            <button onClick={addCategory}>Add</button>
+            <Button onClick={addCategory}>Add</Button>
             <br />
             <br />
             <Link to="/create-item">
-                <button>Back</button>
+                <Button>Back</Button>
             </Link>
         </div>
     );

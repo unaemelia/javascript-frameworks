@@ -1,13 +1,12 @@
 /* Footer */
 .footer {
-  background-color: chocolate;
+  background: #defcf6;
 }
 .footer_container {
   display: flex;
   justify-content: space-around;
   width: 60%;
   margin: auto;
-
   padding: 15px 10px 5px 10px;
 }
 .link_list,
@@ -19,7 +18,7 @@
 .link_item {
   padding: 10px;
   font-size: 20px;
-  color: black;
+  color: #3f3a46;
 }
 
 .icon_img {
@@ -27,9 +26,9 @@
 }
 .link {
   text-decoration: none;
-  color: black;
+  color: #3f3a46;
   font-weight: bold;
 }
 .link:hover {
-  color: cornsilk;
+  color: #61656B;
 }
