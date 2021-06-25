@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
-import { Title, PageWrapper } from '../../styles/Styling';
+import { Title } from '../../styles/Styling';
 
 
 const CreateItem = () => {

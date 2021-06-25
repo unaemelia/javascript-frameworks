@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
-import { Title, PageWrapper } from '../../styles/Styling';
+import { Title } from '../../styles/Styling';
 
 function UpdateItem({ match }) {
     const productId = match.params.productId;
-    // const [product, setProduct] = useState({});
     const history = useHistory();
 
     useEffect(() => {
